@@ -5,5 +5,4 @@
 
 /* layouts */
 @import "./layout/header.css";
-@import "./layout/hero.css";
 @import "./layout/searcher.css"

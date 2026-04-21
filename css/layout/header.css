@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  padding: 0 2rem;
+  gap: 16px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  /* Prevent elements visivility */
+  background-color: var(--background-color);
+}
+
+header img {
+  height: 64px;
+}
+
+@media (max-width: 480px) {
+  header img {
+    height: 32px;
+  }
+}

@@ -1,0 +1,13 @@
+.hero {
+  padding: 32px 0 52px 0;
+}
+
+.hero img {
+  height: 152px;
+}
+
+@media (max-width: 480px) {
+  .hero img {
+    height: 62px;
+  }
+}

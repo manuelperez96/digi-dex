@@ -1,0 +1,47 @@
+.digimon-list {
+  width: 80%;
+  
+}
+.searcher {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.searcher-bar {
+  width: 100%;
+  height: 72px;
+  padding: 24px 16px;
+  border-radius: 10px;
+  max-width: 1200px;
+  border: none;
+  box-shadow: 0 4px 18.5px 2px rgb(0 0 0 / 0.25);
+}
+.searcher-bar:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.searcher-button {
+  height: 72px;
+  width: 80px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px 2px rgb(0 0 0 / 0.25);
+}
+
+.searcher-button:hover {
+  box-shadow: 0 8px 24px 2px rgb(0 0 0 / 0.35);
+  transform: translateY(-1px);
+}
+
+.searcher-button:active {
+  box-shadow: 0 2px 10px 1px rgb(0 0 0 / 0.25);
+  transform: translateY(1px);
+}
+
+.searcher-button {
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}

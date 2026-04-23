@@ -1,3 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.digimon-container {
+  flex: 1; /* 🔑 clave */
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
 .digimon-card {
-    
+  width: 80%;
+  min-width: 360px;
+  max-width: 900px; /* opcional, recomendable */
+  box-shadow: 4px 4px 21.5px 6px rgb(0 0 0 / 0.25);
+  background-color: white;
+  padding: 24px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.digimon-card img {
+  flex: 1;
+
+  align-self: center;
+}
+
+.digimon-card .digimon-information {
+  flex: 2;
+}
+
+.digimon-information h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.digimon-information h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.extra-info {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 680px) {
+  .digimon-card {
+    flex-direction: column;
+  }
+
+  .digimon-card img {
+    min-width: 320px;
+    max-width: 400px;
+    align-self: center;
+  }
 }

@@ -1,0 +1,49 @@
+.digimon-card {
+  border-radius: 20px;
+  background-color: white;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* overflow: hidden; */
+}
+
+.digimon-card img {
+  border-radius: inherit;
+  height: 120px;
+  width: 120px;
+  
+}
+
+.upper-information {
+  display: flex;
+  gap: 8px;
+}
+.upper-information .id {
+  margin-left: auto;
+}
+
+.information {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+
+
+}
+
+.information-text h2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+}
+
+.information-text p {
+  margin: 0px;
+  margin-top: 8px;
+  font-size: 13px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  line-clamp: 4;
+  overflow: hidden;
+}

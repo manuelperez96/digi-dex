@@ -1,9 +1,49 @@
 @import "./hero.css";
+@import "./digimon-card.css";
 
-
+body {
+  padding-bottom: 16px;
+}
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.digimon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.loader {
+  align-self: center;
+}
+
+h2 {
+  text-align: center;
+}
+.grided-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 192px;
+  gap: 16px;
+}
+
+.card-link {
+    text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1035px) {
+  .grided-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .grided-list {
+    grid-template-columns: 1fr;
+  }
 }

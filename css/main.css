@@ -2,7 +2,13 @@
 @import "./base/constants.css";
 @import "./base/base.css";
 
+/* Components */
+@import "./component/loader.css";
 
 /* layouts */
 @import "./layout/header.css";
-@import "./layout/searcher.css"
+@import "./layout/searcher.css";
+
+.hide {
+    display: none;
+}
